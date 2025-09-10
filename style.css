@@ -1,132 +1,42 @@
-.card {
-  transition: box-shadow 0.6s ease-in;
-
-  &:hover {
-    box-shadow: 16px 16px 0px 0px hsl(0, 0%, 7%),
-      0 0px 0px 0 rgba(0, 0, 0, 0.1);
-
-    .title {
-      color: hsl(47, 88%, 63%);
-      transition: color 0.6s ease;
-    }
-  }
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 body {
   background: hsl(47, 88%, 63%);
   font-family: "Figtree", Arial, sans-serif;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
 }
 
-.card {
-  background: hsl(0, 0%, 100%);
-  border-radius: 20px;
-  box-shadow: 8px 8px 0px 0px hsl(0, 0%, 7%);
-  max-width: 384px;
-  width: 90vw;
-  padding: 24px;
-  margin: 40px 0 16px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border: 1px solid hsl(0, 0%, 7%);
-  box-sizing: border-box;
+.custom-card {
+  border-radius: 20px !important;
+  box-shadow: 8px 8px 0px 0px hsl(0, 0%, 7%) !important;
   transition: box-shadow 0.6s ease;
 }
-
-.card-image {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 24px;
+.custom-card:hover {
+  box-shadow: 16px 16px 0px 0px hsl(0, 0%, 7%) !important;
 }
 
 .category {
-  background: hsl(47, 88%, 63%);
-  color: hsl(0, 0%, 7%);
-  font-family: "Figtree", Arial, sans-serif;
-  font-weight: 800;
-  font-size: 14px;
-  padding: 4px 12px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  display: inline-block;
+  background: hsl(47, 88%, 63%) !important;
+  color: hsl(0, 0%, 7%) !important;
   letter-spacing: 1px;
 }
 
-.publishing-date {
-  display: block;
-  margin-bottom: 20px;
-  font-size: small;
-}
-
 .title {
-  font-size: 24px;
-  font-weight: 800;
-  margin: 0 0 16px 0;
   color: hsl(0, 0%, 7%);
   cursor: pointer;
   transition: color 0.6s ease;
 }
 .title:hover {
   color: hsl(47, 88%, 63%);
-  transition: color 0.6s ease;
 }
 
-.description {
-  color: hsl(0, 0%, 42%);
-  font-size: 16px;
-  margin-bottom: 24px;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.meta {
-  font-size: 14px;
-  color: hsl(0, 0%, 7%);
-  margin-bottom: 24px;
-  font-weight: 500;
-}
-
-.author {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
 .author-avatar {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   border: 1.5px solid hsl(0, 0%, 100%);
 }
-.author-name {
-  font-weight: 800;
-  color: hsl(0, 0%, 7%);
-  font-size: 14px;
-}
 
-@media (max-width: 400px) {
-  .card {
-    padding: 16px;
-    max-width: 95vw;
-  }
-  .title {
-    font-size: 20px;
-  }
-  .description {
-    font-size: 15px;
-  }
+.attribution {
+  font-size: 11px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
